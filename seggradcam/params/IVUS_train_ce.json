@@ -1,0 +1,21 @@
+{
+    "common":{
+        "activity": "train",
+        "num_classes":1,
+        "dataset":"ivus",
+        "img_folder": "/data/saumgupta/miccai/dataset/IVUS/Training_Set/nnunet/test-data/input",
+        "gt_folder": "/data/saumgupta/miccai/dataset/IVUS/Training_Set/nnunet/test-data/gt/obs2_v1",
+        "checkpoint_restore":"/data/saumgupta/ml-cse512/project/m-ensemble-checkpoints/ivus/trial4/model_best.pth"
+        },
+    "train":{
+        "train_datalist":"/data/saumgupta/ml-cse512/project/ivus-data/test-list.csv",
+        "validation_datalist":"/data/saumgupta/ml-cse512/project/ivus-data/test-list.csv",
+        "train_batch_size":1,
+        "val_batch_size":1,
+        "output_folder":"/data/saumgupta/ml-cse512/project/test-results/ivus/seggradcam/original-lh",
+        "learning_rate":0.0001,
+        "num_epochs":1000,
+        "save_every": 100,
+        "start_epoch":0
+    }
+}

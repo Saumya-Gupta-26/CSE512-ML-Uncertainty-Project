@@ -1,0 +1,21 @@
+{
+    "common":{
+        "activity": "train",
+        "num_classes":1,
+        "dataset":"city",
+        "img_folder": "/data/saumgupta/ml-cse512/project/cityscapes-data/leftImg8bit/leftImg8bit/train",
+        "gt_folder": "/data/saumgupta/ml-cse512/project/cityscapes-data/gtFine/train",
+        "checkpoint_restore":"/data/saumgupta/ml-cse512/project/m-ensemble-checkpoints/city/trial4/model_best.pth"
+        },
+    "train":{
+        "train_datalist":"/data/saumgupta/ml-cse512/project/cityscapes-data/train-list.csv",
+        "validation_datalist":"/data/saumgupta/ml-cse512/project/cityscapes-data/val-list.csv",
+        "train_batch_size":8,
+        "val_batch_size":1,
+        "output_folder":"/data/saumgupta/ml-cse512/project/m-ensemble-checkpoints/city/trial4",
+        "learning_rate":0.0001,
+        "num_epochs":1000,
+        "save_every": 100,
+        "start_epoch":0
+    }
+}

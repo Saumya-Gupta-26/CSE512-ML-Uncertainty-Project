@@ -1,0 +1,14 @@
+{
+    "common":{
+        "activity": "test",
+        "num_classes":1,
+        "dataset":"ivus",
+        "img_folder": "/data/saumgupta/miccai/dataset/IVUS/Training_Set/nnunet/test-data/input",
+        "gt_folder": "/data/saumgupta/miccai/dataset/IVUS/Training_Set/nnunet/test-data/gt/obs2_v1",
+        "checkpoint_restore":"/data/saumgupta/ml-cse512/project/probunet/ivus/model_best.pth"
+    },
+    "test":{
+        "test_datalist":"/data/saumgupta/ml-cse512/project/ivus-data/test-list.csv",
+        "output_folder":"/data/saumgupta/ml-cse512/project/test-results/ivus/probunet/original-lh/"
+    }
+}

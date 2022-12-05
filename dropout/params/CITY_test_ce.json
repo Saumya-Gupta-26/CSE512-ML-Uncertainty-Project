@@ -1,0 +1,14 @@
+{
+    "common":{
+        "activity": "test",
+        "num_classes":1,
+        "dataset":"city",
+        "img_folder": "/data/saumgupta/ml-cse512/project/cityscapes-data/leftImg8bit/leftImg8bit/val",
+        "gt_folder": "/data/saumgupta/ml-cse512/project/cityscapes-data/gtFine/val",
+        "checkpoint_restore":"/data/saumgupta/ml-cse512/project/dropout/city/cont/model_best.pth"
+        },
+    "test":{
+        "test_datalist":"/data/saumgupta/ml-cse512/project/cityscapes-data/test-list.csv",
+        "output_folder":"/data/saumgupta/ml-cse512/project/test-results/city/dropout/original-lh/"
+    }
+}
